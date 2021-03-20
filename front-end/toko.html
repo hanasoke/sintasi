@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Toko</title>
+  </head>
+  <body>
+
+    <!-- Awal Navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-shopping-cart"></i> Belanja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-comment-dots"></i> Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-info-circle"></i>
+                  Informasi
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-danger" href="#">Persyaratan Layanan Penjual</a>
+                  <a class="dropdown-item text-danger" href="#">Pengiriman</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-box"></i> Pesananku</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i> 
+                  Akun
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-danger" href="#">Pengaturan Akun</a>
+                  <a class="dropdown-item text-danger" href="#">LogOut</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#"><i class="fas fa-shopping-basket"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal SearchBar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-hidden">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <h5 class="nav-link" href="#">PasarKitaSemua</h5>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline">
+                <div class="input-group">
+                  <input type="text" class="form-control cari-barang" placeholder="Cari" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text logo" id="basic-addon1"><i class="fas fa-search"></i></span>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-shopping-basket mt-2 ml-3"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-bell mt-2 ml-3"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-comment mt-2 ml-3"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <i class="mt-2 ml-3">|</i>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-store mt-2 ml-3"> Permadani Case</i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-user mt-2 ml-3"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir SearchBar -->
+
+    <!-- Awal Jumbotron -->
+    <div class="container">
+      <div class="jumbotron jumbotron_img">
+        <div class="button-botton">
+          <button class="btn btn-danger btn-lg" href="#" role="button">Power Merchant</button>
+        </div>
+        <div class="button-navigation">
+          <div class="photo"></div>
+        </div>
+        <div class="text">
+          <div class="container">
+            <div class="row">
+              <div class="col mt-2">
+                <p class="h5 text-uppercase">Pasar Kita Semua</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="img/placeholder.png" alt="" width="20"> Jakarta Selatan | 89.1K Followers | 17.9K Followers
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-2">
+                <button type="button" class="btn btn-sm btn-danger">Follow</button>
+                <button type="button" class="btn btn-sm btn-danger">Chat Penjual</button>
+                <button type="button" class="btn btn-sm btn-light">Info Toko</button>
+                <button type="button" class="btn btn-sm btn-light"><i class="fas fa-envelope"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="terjual">
+          <div class="container">
+            <div class="row mt-4">
+              <div class="col">
+                <p class="">Produk Terjual</p>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -20px;">
+              <div class="col">
+                <p class="">200.8 K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="views">
+          <div class="container">
+            <div class="row mt-4">
+              <div class="col">
+                <p>Nilai Kualitas Produk</p>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -15px;">
+              <div class="col">
+                <p>4.9
+                  <img src="img/Logo/star.png" alt="" width="20" style="margin-top: -4px;">
+                  <img src="img/Logo/star.png" alt="" width="20" style="margin-top: -4px;">
+                  <img src="img/Logo/star.png" alt="" width="20" style="margin-top: -4px;">
+                  <img src="img/Logo/star.png" alt="" width="20" style="margin-top: -4px;">
+                  <img src="img/Logo/star.png" alt="" width="20" style="margin-top: -4px;">
+                  (20000)
+                </p>
+                <p style="margin-top: -15px;">Lihat statistik Toko <img src="img/Logo/share.png" alt="" style="width: 8%;"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Awal Menu -->
+    <div class="container">
+      <div class="row text-uppercase">
+        <div class="col">
+          <p>Berada</p>
+        </div>
+        <div class="col margin-menu">
+          <p class="text-danger">Produk</p>
+        </div>
+        <div class="col margin-menu">
+          <p>Ulasan</p>
+        </div>
+      </div>
+      <div class="row margin-line">
+        <div class="col">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mistery_box"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Menu -->
+
+    <!-- Awal Jualan -->
+    <section class="mb-5">
+      <div class="container jualan">
+        <div class="row">
+          <div class="col">
+            <p>Official Store <i class="fas fa-chevron-circle-right"></i> Brand <i class="fas fa-chevron-circle-right"></i> Pasar Kita Semua <i class="fas fa-chevron-circle-right"></i> Produk</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m2 s4">
+            <div class="card card-voucher"  style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Voucher</h5>
+                <div class="voucher">
+                  <img src="img/promo.png" alt="" width="200" class="ml-5 mt-2">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col m5 s4">
+            <div class="row">
+              <div class="card-cari">
+                <div class="col">
+                  <div class="input-group card-search">
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group card-new">
+                    <input type="text" class="form-control" placeholder="Terbaru">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="fas fa-angle-down"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col produk">
+                  <p class="h4">Semua Produk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col m2 s4">
+            <div class="card"  style="width: 20rem;">
+              <div class="card-body card-etalase">
+                <p class="">Etalase Toko</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Semua Produk</li>
+                  <li class="list-group-item">Diskon</li>
+                  <li class="list-group-item">
+                    Produk Terjual
+                    <button type="button" class="btn btn-danger btn-sm">diskon</button>
+                  </li>
+                  <li class="list-group-item">Pre Order</li>
+                  <li class="list-group-item">iP12 ACC</li>
+                  <li class="list-group-item">Perlengkapan Lampu</li>
+                  <li class="list-group-item">Tas Bag</li>
+                  <li class="list-group-item">Phone Holder</li>
+                  <li class="list-group-item">Home Universal</li>
+                  <li class="list-group-item">Humidifier n Pewangi Mobil</li>
+                  <li class="list-group-item">HUB</li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="row card-row">
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/1.png" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nibras NB A61</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">50%</button>
+                    <del>Rp. 1.700.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 850.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/2.jpg" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Love NB A62</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">30%</button>
+                    <del>Rp. 1.567.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 1.096.900
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1200</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/3.jpg" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">White NB A63</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">20%</button>
+                    <del>Rp. 1.450.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 1.160.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/4.jpg" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Slowski NB A64</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">75%</button>
+                    <del>Rp. 2.100.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 525.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 45</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/6.jpg" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chaos NB A65</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">67%</button>
+                    <del>Rp. 3.330.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 1.119.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 89</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/5.jpg" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jeans NB A66</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">60%</button>
+                    <del>Rp. 2.750.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 1.100.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/1.png" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nibras NB A61</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">50%</button>
+                    <del>Rp. 1.700.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 850.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/1.png" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nibras NB A61</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">50%</button>
+                    <del>Rp. 1.700.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 850.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col card-belanjaan">
+            <div class="col mb-5">
+              <div class="card">
+                <img src="img/Daftar Belanjaan/1.png" class="" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nibras NB A61</h5>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-danger btn-sm">50%</button>
+                    <del>Rp. 1.700.000</del>
+                  </p>
+                  <p class="card-text price">
+                    Rp. 850.000
+                  </p>
+
+                  <div class="t-shirt">
+                    <p class="sales">Terjual 1500</p>
+                    <p class="dot"><i class="fas fa-ellipsis-h "></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Akhir Jualan -->
+
+    <!-- Awal Footer -->
+    <footer class="border-top p-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <h4>KONTAK KAMI</h4>
+          </div>
+          <div class="col">
+            <h4>PEMBAYARAN</h4>
+          </div>
+        </div>
+        <div class="row mt-3 justify-content-between">
+          <div class="col">
+            <div class="row">
+              <div class="col-1 col-md-1"><img src="img/icon/telephone.png" alt="" width="20"></div>
+              <div class="col-11 col-md-11">085819536158</div>
+            </div>
+            <div class="row">
+              <div class="col-1 col-md-1"><img src="img/icon/account.png" alt="" width="20"></div>
+              <div class="col-11 col-md-11">@hanasoke</div>
+            </div>
+            <div class="row">
+              <div class="col-1 col-md-1"><img src="img/icon/gmail.png" alt="" width="20"></div>
+              <div class="col-11 col-md-11">hanasoke@gmail.com</div>
+            </div>
+            <div class="row">
+              <div class="col-1 col-md-1"><img src="img/icon/home-address.png" alt="" width="20"></div>
+              <div class="col-11 col-md-11">Jl. TB Simatupang No. 82, RT 2/ RW 8, Ps. Minggu,
+                Kec Ps Minggu, Kota Jakarta Selatan, Daerah 
+                Khusus Ibukota Jakarta 12520</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row mb-2">
+              <div class="col">E-Wallet & M-Banking</div>
+              <div class="row">
+                <div class="col">
+                  <img src="img/icon/bca-bank-central-asia.svg" width="60" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/ovo.png" width="60" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/dana.png" width="60" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/gopay.png" width="60" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/LinkAja.png" width="40" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col">Virtual Account Rekening Bank</div>
+              <div class="row">
+                <div class="col">
+                  <img src="img/icon/agi.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/bca-bank-central-asia.svg" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/mandiri.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/CIMB_Niaga_logo.svg" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col mb-2">Mini Market</div>
+              <div class="row">
+                <div class="col">
+                  <img src="img/icon/alfamart-logo-13EE0761D0-seeklogo.com.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/indomaret.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col">Virtual Account Rekening Bank</div>
+              <div class="row">
+                <div class="col">
+                  <img src="img/icon/logo-wpl1.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/lion_parcel_logo.1e3c7314.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/logo-red.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/tiki.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/JNE.png" width="70" alt="">
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img src="img/icon/sicepat-ekspres-logo-F183B280E5-seeklogo.com.png" width="50" alt="">
+                </div>
+                <div class="col">
+                  <img src="img/icon/250px-Pos-Indonesia.svg.png" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+                <div class="col">
+                  <img src="" width="70" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jam-kerja">
+          <div class="row">
+            <div class="col">
+              <h4>JAM KERJA</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col-2 col-md-2">Senin - Jum'at</div>
+                <div class="col-10 col-md-10">09.00 - 17.00 WIB</div>
+              </div>
+              <div class="row">
+                <div class="col-2 col-md-2">Sabtu</div>
+                <div class="col-10 col-md-10">10.00 - 15.00 WIB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    
+  </body>
+</html>
